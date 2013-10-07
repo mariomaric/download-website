@@ -12,7 +12,6 @@ wget \
   "$1"
 
 # Useful extra options:
-# --no-directories
 # --no-check-certificate
 # --accept
 # --reject
