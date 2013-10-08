@@ -10,7 +10,7 @@ download-webpage() {
     --page-requisites \
     --adjust-extension \
     --convert-links --backup-converted \
-    --wait --random-wait \
+    --random-wait \
     --background \
     "$@"
 }
@@ -24,7 +24,7 @@ download-website() {
     --page-requisites \
     --adjust-extension \
     --convert-links --backup-converted \
-    --wait --random-wait \
+    --random-wait \
     --background \
     "$@"
 }
