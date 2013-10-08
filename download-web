@@ -3,9 +3,9 @@
 
 download-webpage() {
   wget \
-    --span-hosts \
     --no-directories \
     --directory-prefix=webpage \
+    --recursive --level=1 \
     --timestamping \
     --page-requisites \
     --adjust-extension \
