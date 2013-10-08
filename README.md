@@ -1,4 +1,3 @@
-download-website
-================
+# Download web*
 
-Download entire website for offline use.
+Download entire website or a single webpage.
