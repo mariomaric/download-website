@@ -1,23 +1,40 @@
-#!/bin/bash
 # Requirements: wget
-# Usage: download-website-offline URL 
+# Usage: http://mariomaric.net/download-web/ 
 
-wget \
-  --timestamping \
-  --recursive \
-  --adjust-extension \
-  --convert-links \
-  --backup-converted \
-  --page-requisites \
-  "$1"
+download-webpage() {
+  wget \
+    --span-hosts \
+    --no-directories \
+    --directory-prefix=webpage \
+    --timestamping \
+    --page-requisites \
+    --adjust-extension \
+    --convert-links --backup-converted \
+    --wait --random-wait \
+    --background \
+    "$@"
+}
+
+alias dlwp='download-webpage'
+
+download-website() {
+  wget \
+    --recursive --level=inf \
+    --timestamping \
+    --page-requisites \
+    --adjust-extension \
+    --convert-links --backup-converted \
+    --wait --random-wait \
+    --background \
+    "$@"
+}
+
+alias dlws='download-website'
 
 # Useful extra options:
-# --no-check-certificate
-# --accept
-# --reject
-# --no-parent
-# --limit-rate=
-# --quota=
-# --background
-
-exit
+#    --no-check-certificate \
+#    --no-parent \
+#    --accept  \
+#    --reject  \
+#    --quota=  \
+#    --limit-rate=  \
