@@ -7,6 +7,6 @@ wget \
     --page-requisites \
     --adjust-extension \
     --convert-links --backup-converted \
-    --random-wait \
+    --wait=1 --random-wait \
     --background \
     "$@"
