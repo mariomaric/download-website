@@ -10,3 +10,6 @@ Download entire website or a single webpage.
     --quota=
     --limit-rate=
     --spider
+    --no-directories
+    --directory-prefix=
+    --level=1
