@@ -2,9 +2,7 @@
 # Info: http://mariomaric.net/download-web/ 
 
 wget \
-    --no-directories \
-    --directory-prefix=webpage \
-    --recursive --level=1 \
+    --recursive --level=inf \
     --timestamping \
     --page-requisites \
     --adjust-extension \
