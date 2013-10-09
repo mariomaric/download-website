@@ -1,5 +1,5 @@
 #!/bin/bash
-# Info: http://mariomaric.net/download-web/ 
+# Info: https://github.com/mariomaric/download-website#readme
 
 wget \
     --recursive --level=inf \
